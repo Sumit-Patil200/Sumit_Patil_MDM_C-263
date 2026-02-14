@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Risk Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a href="#">Risk Calculator</a>
+      <a href="#">About this Calculator</a>
+      <a href="#">About Us</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <!-- LEFT PANEL -->
+      <div class="left-panel">
+        <h1 class="form-title">Information Needed to Estimate Your Risk</h1>
+        <p class="form-subtext">
+          Please enter accurate and appropriate values in all the fields below.
+          The estimated risk percentages are calculated based on your provided
+          activity details, exposure level, and personal health information.
+        </p>
+
+        <label>Country</label>
+        <select>
+          <option>United States</option>
+          <option>India</option>
+          <option>United Kingdom</option>
+          <option>Canada</option>
+          <option>Australia</option>
+        </select>
+
+        <label>Region</label>
+        <select>
+          <option>Massachusetts</option>
+          <option>California</option>
+          <option>New York</option>
+          <option>Texas</option>
+          <option>Florida</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" />
+
+        <label>Mask Type</label>
+        <select>
+          <option>No Mask</option>
+          <option>Cloth Mask</option>
+          <option>Surgical Mask</option>
+          <option>N95</option>
+        </select>
+
+        <label>Vaccine Type and Dosage</label>
+        <select>
+          <option>Moderna Dose 1</option>
+          <option>Moderna Dose 2</option>
+          <option>Pfizer Dose 1</option>
+          <option>Pfizer Dose 2</option>
+          <option>No Vaccination</option>
+        </select>
+
+        <label>Age</label>
+        <input type="number" value="30" />
+
+        <label>Sex</label>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+
+        <label>Chronic Illness</label>
+        <select>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+
+        <label>People Passed Indoors</label>
+        <input type="number" value="5" />
+
+        <label>People Passed Outdoors</label>
+        <input type="number" value="10" />
+
+        <div class="button-group">
+          <button class="submit">Submit</button>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="right-panel">
+        <h2>Activity Risk Calculator</h2>
+        <p class="subtitle">Risk of Being Infected with COVID-19</p>
+
+        <h3>Estimated Risk:</h3>
+
+        <div class="risk-box">
+          <div class="risk-title">Total Chance of Infection</div>
+          <div class="risk-value">1/110 to 1/57</div>
+        </div>
+
+        <div class="risk-box">
+          <div class="risk-title">Indoor Risk of Infection</div>
+          <div class="risk-value">1/130 to 1/63</div>
+        </div>
+
+        <div class="risk-box">
+          <div class="risk-title">Outdoor Risk of Infection</div>
+          <div class="risk-value">1/630 to 1/1300</div>
+        </div>
+
+        <div class="risk-box">
+          <div class="risk-title">Risk of Hospitalization</div>
+          <div class="risk-value">1/33000 to 1/2100</div>
+        </div>
+
+        <div class="risk-box">
+          <div class="risk-title">Risk of Death</div>
+          <div class="risk-value">1/43000 to 1/3300</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
